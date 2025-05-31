@@ -106,7 +106,7 @@ body,html {
 
   .about-section {
     position: relative;
-    background-image: url('/public/pic7.jpg');
+    background-image: url('../public/pic7.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -133,7 +133,7 @@ body,html {
 
    .certifications-section {
     width: 100%;
-    background-image: url('/public/pic6.jpg'); /* Replace with your actual path */
+    background-image: url('../public/pic6.jpg'); /* Replace with your actual path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
