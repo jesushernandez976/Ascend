@@ -227,7 +227,7 @@ video {
 }
 
 .hero2 {
-    background-image: url('/public/pic7.jpg'); /* Replace with your image path */
+    background-image: url('../public/pic7.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -248,7 +248,7 @@ video {
   }
 
   .hero3 {
-    background-image: url('/public/pic8.jpg'); /* Replace with your image path */
+    background-image: url('../public/pic8.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -405,15 +405,15 @@ video {
 
 /* Unique backgrounds for each block */
 .feature-bg1::before {
-  background-image: url('/public/pic4.jpg');
+  background-image: url('../public/pic4.jpg');
 }
 
 .feature-bg2::before {
-  background-image: url('/public/pic5.jpg');
+  background-image: url('../public/pic5.jpg');
 }
 
 .feature-bg3::before {
-  background-image: url('/public/pic6.jpg');
+  background-image: url('../public/pic6.jpg');
 }
 
 .feature * {
@@ -468,15 +468,15 @@ video {
 
 /* Custom background images */
 .bg1 {
-  background-image: url('/public/pic1.jpg');
+  background-image: url('../public/pic1.jpg');
 }
 
 .bg2 {
-  background-image: url('/public/pic2.jpg');
+  background-image: url('../public/pic2.jpg');
 }
 
 .bg3 {
-  background-image: url('/public/pic3.jpg');
+  background-image: url('../public/pic3.jpg');
 }
 
 .container-2 {
