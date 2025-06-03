@@ -1,8 +1,9 @@
+require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 const app = express();
-const PORT = 3000; // Change if needed
+const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors());
@@ -15,17 +16,17 @@ app.post('/contact', async (req, res) => {
 
   // Setup mail transporter
   const transporter = nodemailer.createTransport({
-    service: 'gmail', // or use "smtp.mailgun.org", etc.
+    service: 'gmail',
     auth: {
-      user: 'jesuspiecesboy@gmail.com',          // <-- your Gmail
-      pass: 'xestqnfotmsjheae'         // <-- create an App Password
-    },
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS
+    }
   });
 
   // Define email content
   const mailOptions = {
     from: email,
-    to: 'jesuspiecesboy@gmail.com', // <-- where to receive messages
+    to: process.env.EMAIL_USER,
     subject: `Contact Form Submission from ${name}`,
     text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage:\n${message}`
   };
