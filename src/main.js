@@ -15,3 +15,11 @@ document.getElementById("contactForm").addEventListener("submit", async function
       alert("Something went wrong.");
     }
   });
+
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+  });

@@ -19,30 +19,50 @@
 </head>
 
 <body>
+  <div class="hamburger" id="hamburger" data-aos="fade-down">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobileMenu" id="mobileMenu">
+    <nav class="mobile-links">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  
   <header class="custom-header" data-aos="fade-down">
     <div class="header-content">
-      <img src="./public/5.png" alt="" width="50" height="50">
+      <a href="index.html">
+        <img src="./public/5.png" alt="Home" width="50" height="50">
+      </a>
+
       <nav class="nav-links">
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <div class="auth-buttons">
-        <button class="button">
-          Contact Us
-          <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
-            <path fill-rule="evenodd"
-              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </button>
-      </div>
+      <a href="contact.html" class="button auth-buttons">
+        Contact Us
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </a>
+
+      </button>
+    </div>
     </div>
   </header>
 
-
-
+  <div class="custom-header2"></div>
 
   <div class="hero">
     <img src="./public/newlogo.png" alt="Ascend Logo" class="logo" />
@@ -50,7 +70,7 @@
       <p class="lead-text">
         Do What You love, Free from Pain <br> St. Charles, IL
       </p>
-      <div class="auth-buttons2">
+      <a href="contact.html" class="auth-buttons2">
         <button class="button">
           Contact Us
           <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
@@ -59,7 +79,7 @@
               clip-rule="evenodd"></path>
           </svg>
         </button>
-      </div>
+      </a>
     </div>
   </div>
 
@@ -101,26 +121,31 @@
             width="400" height="500" loading="lazy">
         </div>
         <div class="col-lg-7">
-          <h1 class="display-5 fw-bold lh-1 mb-3 text-white py-5" data-aos="fade-up">Meet Dr. Bruni</h1>
+          <h1 class="display-5 fw-bold lh-1 mb-3 text-white py-5" data-aos="fade-up">Meet Dr. Shane Bruni</h1>
           <p class="lead text-white fs-4" data-aos="fade-down">
-            Are you tired of persistent pain or physical limitations that are holding back your performance? If you’ve
+            "Are you tired of persistent pain or physical limitations that are holding back your performance? If you’ve
             tried other physical therapy or chiropractic approaches without lasting results, we offer a different path.
             We focus on the unique demands of athletes like you, whether you’re hitting the box for CrossFit, logging
             miles on the road, or lifting your baby from the floor, we go beyond simply treating symptoms. By taking a
             whole person and rehab-focused approach, the underlying imbalances affecting your strength, mobility, and
             stability are addressed. We will identify the root cause of your issues and create a personalized plan to
-            not only alleviate pain but also elevate your athletic performance and overall health.
+            not only alleviate pain but also elevate your athletic performance and overall health."
           </p>
         </div>
         <div class="d-grid d-sm-flex mb-5 justify-content-sm-left align-content-center" style="margin-top: 0;">
           <button class="body-button">
-            <span>Learn More</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 74 74" height="34" width="34">
-              <circle stroke-width="3" stroke="black" r="35.5" cy="37" cx="37"></circle>
-              <path fill="black"
-                d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z">
-              </path>
-            </svg>
+            <a href="about.html">
+
+              <span>Learn More</span>
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 74 74" height="34" width="34">
+                <circle stroke-width="3" stroke="black" r="35.5" cy="37" cx="37"></circle>
+                <path fill="black"
+                  d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z">
+                </path>
+              </svg>
+            </a>
+
           </button>
         </div>
 
@@ -136,7 +161,7 @@
             the life you deserve free from pain killers and the fear of pain ever holding you back.
           </p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center" data-aos="zoom-in">
-            <div class="auth-buttons2">
+            <a href="contact.html" class="auth-buttons2">
               <button class="button">
                 Request A Free Discovery Visit
                 <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
@@ -145,7 +170,7 @@
                     clip-rule="evenodd"></path>
                 </svg>
               </button>
-            </div>
+            </a>
           </div>
 
         </div>
@@ -399,7 +424,7 @@
             Request an appointment with us so you can get back to enjoying the things that matter the most.
           </p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center" data-aos="zoom-in">
-            <div class="auth-buttons2">
+            <a href="contact.html" class="auth-buttons2">
               <button class="button">
                 Request A Free Discovery Visit
                 <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
@@ -408,7 +433,7 @@
                     clip-rule="evenodd"></path>
                 </svg>
               </button>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -489,10 +514,11 @@
             <h5>Find Us</h5>
             <div class="rounded overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0199972255733!2d-122.40136468468135!3d37.793617679756444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064e8e4ed05%3A0x5e9a82e9e01f7a8e!2sSalesforce%20Tower!5e0!3m2!1sen!2sus!4v1618317891234"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2973.789774928299!2d-88.29722768454703!3d41.920953979217034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880ef47f6286a7d5%3A0xd0b4b4f2d5bc7c7f!2s3833%20E%20Main%20St%2C%20St%20Charles%2C%20IL%2060174%2C%20USA!5e0!3m2!1sen!2sus!4v1618317891234"
                 width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
               </iframe>
             </div>
+
           </div>
         </div>
 
@@ -511,7 +537,7 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
 
-      
+
       AOS.init({
         duration: 1000, // animation duration (in ms)
         offset: 100, // how far before element is visible (px)
