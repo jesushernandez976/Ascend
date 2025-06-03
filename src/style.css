@@ -721,7 +721,7 @@ video {
 
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .feature {
     flex: 1 1 100%;
@@ -737,7 +737,7 @@ video {
   #featured-3 .feature {
     order: 0 !important;
   }
-
+}
 
 @media (max-width: 650px) {
 
