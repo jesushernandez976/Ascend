@@ -14,6 +14,7 @@
     rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <title>Ascend</title>
   <style>
     body {
@@ -39,9 +40,9 @@
 </head>
 
 <body>
-  <header class="custom-header">
+  <header class="custom-header" data-aos="fade-down">
     <div class="header-content">
-      <img src="./public/5_9.png" alt="" width="40" height="40">
+      <img src="./public/5.png" alt="" width="50" height="50">
       <nav class="nav-links">
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
@@ -49,7 +50,14 @@
         <a href="contact.html">Contact</a>
       </nav>
       <div class="auth-buttons">
-        <button class="signup">Request Appointment</button>
+        <button class="button">
+          Contact Us
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
       </div>
     </div>
   </header>
@@ -57,14 +65,22 @@
 
 
 
-  <!-- HTML -->
   <div class="hero">
-    <img src="./public/newlogo.png" alt="Ascend Logo" width="900" height="300" class="logo" />
+    <img src="./public/newlogo.png" alt="Ascend Logo" width="900" height="300" class="logo"/>
     <div class="content">
       <p class="lead-text">
-        Ascend provides chiropractic care and sports medicine in St. Charles, IL.
+        Do What You love, Free from Pain <br> St. Charles, IL
       </p>
-      <button class="primary-btn">Request An Appointment</button>
+      <div class="auth-buttons2">
+        <button class="button">
+          Contact Us
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 
@@ -76,22 +92,22 @@
     </video>
 
     <div class="px-4 py-5 my-5 text-center">
-      <h1 class="display-5 fw-bold text-white py-5">About Ascend Rehab & Spine</h1>
+      <h1 class="display-5 fw-bold text-white py-5" data-aos="fade-up">About Ascend Spine & Rehab</h1>
       <div class="col-lg-10 mx-auto">
-        <p class="lead mb-4 text-white">
+        <p class="lead mb-4 text-white fs-4" data-aos="fade-down">
           Our mission is to give you the tools to rise above the limitations of pain and reclaim a life where you no
           longer have to avoid the things you love. By uncovering the fundamental barriers holding you back and treating
           the root cause, we partner with you to deliver individualized care that empowers you to live fully and freely.
         </p>
-        <div>
+        <div class="icons1" data-aos="zoom-in">
           <img src="./public/icons1.png" class="img-fluid mt-5 mb-2" width="600" height="200" alt="rehab-focused icons">
         </div>
-        <div class="d-grid gap-2 mt-5 d-sm-flex justify-content-sm-center">
+        <!-- <div class="d-grid gap-2 mt-5 d-sm-flex justify-content-sm-center">
           <button type="button" class="btn btn-lg px-4 gap-3"
-            style="background-color: #87CEEB; border: none; font-weight: bold; color: rgb(0, 0, 0);">
+            style="background-color: #87CEEB; border: none; font-weight: bold; color: rgb(255, 255, 255);">
             Learn More
           </button>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -101,49 +117,68 @@
 
     <div class="container col-xxl-8 px-4 py-1 mb-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-4">
-          <img src="./public/head.jpg" class="d-block mx-lg-auto img-fluid rounded-3" alt="Bootstrap Themes" width="500"
-            height="700" loading="lazy">
+        <div class="col-10 col-sm-8 col-lg-4 icons1" data-aos="flip-left">
+          <img src="./public/head.jpg" class="d-block mx-lg-auto img-fluid rounded-3" alt="Dr. Bruni Headshot"
+            width="400" height="500" loading="lazy">
         </div>
-        <div class="col-lg-6">
-          <h1 class="display-5 fw-bold lh-1 mb-3 text-white py-5">Learn more about Dr. Bruni</h1>
-          <p class="lead text-white">
-            Tired of persistent pain or limitations that are holding back your performance? If you've
-            tried other physical therapy or chiropractic approaches without lasting results,
-            Dr. Shane offers a different path. Focusing on the unique demands of athletes like you, whether you're
-            hitting the box for CrossFit, logging miles on the road, or lifting your baby from the floor, Dr. Shane goes
-            beyond simply treating symptoms. By taking a "whole person" and rehab-focused approach, the underlying
-            imbalances affecting your strength, mobility, and stability are addressed. Dr. Shane will identify the root
-            cause of your issues and create a personalized plan to not only alleviate pain but also elevate your
-            athletic performance and overall health.
+        <div class="col-lg-7">
+          <h1 class="display-5 fw-bold lh-1 mb-3 text-white py-5" data-aos="fade-up">Meet Dr. Bruni</h1>
+          <p class="lead text-white fs-4" data-aos="fade-down">
+            Are you tired of persistent pain or physical limitations that are holding back your performance? If you’ve
+            tried other physical therapy or chiropractic approaches without lasting results, we offer a different path.
+            We focus on the unique demands of athletes like you, whether you’re hitting the box for CrossFit, logging
+            miles on the road, or lifting your baby from the floor, we go beyond simply treating symptoms. By taking a
+            whole person and rehab-focused approach, the underlying imbalances affecting your strength, mobility, and
+            stability are addressed. We will identify the root cause of your issues and create a personalized plan to
+            not only alleviate pain but also elevate your athletic performance and overall health.
           </p>
         </div>
+        <div class="d-grid d-sm-flex mb-5 justify-content-sm-left align-content-center" style="margin-top: 0;">
+          <button class="body-button">
+            <span>Learn More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 74 74" height="34" width="34">
+              <circle stroke-width="3" stroke="black" r="35.5" cy="37" cx="37"></circle>
+              <path fill="black"
+                d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z">
+              </path>
+            </svg>
+          </button>
+        </div>
+
       </div>
     </div>
 
 
-    <div class="hero2 text-white px-4 py-5 text-center">
+    <div class="hero2 text-white px-4 py-5 text-center" data-aos="fade-down">
       <div class="py-5">
-        <div class="col-lg-6 mx-auto">
-          <p class="fs-5 mb-4">
+        <div class="col-lg-9 mx-auto">
+          <p class="fs-3 mb-4">
             We believe whether you’re into CrossFit or an active mother, you should be able to live
             the life you deserve free from pain killers and the fear of pain ever holding you back.
           </p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="primary-btn btn-lg px-4 me-sm-3 fw-bold">
-              Request A Free Discovery Visit
-            </button>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center" data-aos="zoom-in">
+            <div class="auth-buttons2">
+              <button class="button">
+                Request A Free Discovery Visit
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
+            </div>
           </div>
+
         </div>
       </div>
     </div>
 
 
 
-    <div class="container mb-5" id="featured-3">
+    <div class="container mb-5" id="featured-3" data-aos="fade-down">
       <h1 class="display-5 fw-bold text-white text-center py-5">The Benefits Of Chiropractic Care With Ascend</h1>
 
-      <div class="row">
+      <div class="row" data-aos="zoom-in">
 
         <div class="feature feature-bg1">
           <div class="feature-icon">
@@ -178,7 +213,7 @@
 
 
 
-    <div id="myCarousel" class="carousel slide mt-5 mb-5" data-bs-ride="carousel">
+    <div id="myCarousel" class="carousel slide mt-5 mb-5" data-bs-ride="carousel" data-aos="fade-down">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
           aria-label="Slide 1"></button>
@@ -193,8 +228,16 @@
             <div class="carousel-caption">
               <h1>Are you looking for ways to better your own lifestyle and feel empowered when it comes to your health?
               </h1>
-              <p>People are frustrated and hopeless as they struggle to live everyday with an injury.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              <p class="fs-4">People are frustrated and hopeless as they struggle to live everyday with an injury.</p>
+              <button class="body-button">
+                <span>Learn More</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 74 74" height="34" width="34">
+                  <circle stroke-width="3" stroke="black" r="35.5" cy="37" cx="37"></circle>
+                  <path fill="black"
+                    d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z">
+                  </path>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -204,8 +247,17 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Our mission is to take you from living in pain to living your life.</h1>
-              <p>We get to the root cause of what's holding you back and provide care to fit your unique needs.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              <p class="fs-4">We get to the root cause of what's holding you back and provide care to fit your unique
+                needs.</p>
+              <button class="body-button">
+                <span>Learn More</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 74 74" height="34" width="34">
+                  <circle stroke-width="3" stroke="black" r="35.5" cy="37" cx="37"></circle>
+                  <path fill="black"
+                    d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z">
+                  </path>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -215,9 +267,18 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>Do The Things You Love</h1>
-              <p>We help active adults feel their best and take control of their health by empowering them with the
+              <p class="fs-4">We help active adults feel their best and take control of their health by empowering them
+                with the
                 tools they need to stay pain-free.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              <button class="body-button">
+                <span>Learn More</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 74 74" height="34" width="34">
+                  <circle stroke-width="3" stroke="black" r="35.5" cy="37" cx="37"></circle>
+                  <path fill="black"
+                    d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z">
+                  </path>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -233,37 +294,84 @@
       </button>
     </div>
 
+    <!-- Services Grid -->
+    <div class="container pb-5" >
+      <div class="row g-3" data-aos="zoom-in">
 
+        <h1 class="display-5 fw-bold text-white text-center py-5" data-aos="fade-up"> Our Services at Ascend
+        </h1>
 
-    <div class="px-4 py-5 my-5 text-center">
-      <h1 class="display-5 fw-bold text-white py-5">Our Services at Ascend Rehab & Spine</h1>
-      <div class="col-lg-10 mx-auto">
-        <p class="lead mb-4 text-white">
-          Our mission is to give you the tools to rise above the limitations of pain and reclaim a life where you no
-          longer have to avoid the things you love. By uncovering the fundamental barriers holding you back and treating
-          the root cause, we partner with you to deliver individualized care that empowers you to live fully and freely.
-        </p>
-        <div>
-          <img src="./public/icons1.png" class="img-fluid mt-5 mb-2" width="600" height="200" alt="rehab-focused icons">
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="./public/pic10.jpg" class="card-img-top" alt="CrossFit Injuries and Recovery" />
+            <div class="card-body">
+              <p class="card-text">CrossFit Injuries and Recovery</p>
+            </div>
+          </div>
         </div>
-        <div class="d-grid gap-2 mt-5 d-sm-flex justify-content-sm-center">
-          <button type="button" class="btn btn-lg px-4 gap-3"
-            style="background-color: #87CEEB; border: none; font-weight: bold; color: rgb(0, 0, 0);">
-            Learn More
-          </button>
+
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="./public/pic11.jpg" class="card-img-top" alt="Back Pain" />
+            <div class="card-body">
+              <p class="card-text">Back Pain</p>
+            </div>
+          </div>
         </div>
+
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="./public/pic12.jpg" class="card-img-top" alt="Corrective Exercise" />
+            <div class="card-body">
+              <p class="card-text">Corrective Exercise / Stretching</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="./public/pic13.jpeg" class="card-img-top" alt="Sciatica" />
+            <div class="card-body">
+              <p class="card-text">Sciatica</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="./public/pic14.jpg" class="card-img-top" alt="Shoulder & Neck Pain" />
+            <div class="card-body">
+              <p class="card-text">Shoulder / Neck Pain</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="./public/pic15.jpg" class="card-img-top" alt="Chiropractic" />
+            <div class="card-body">
+              <p class="card-text">Chiropractic</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="./public/pic1.jpg" class="card-img-top" alt="Sports Injuries" />
+            <div class="card-body">
+              <p class="card-text">Sports Injuries</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
 
-
-
-
-
-    <div class="container mb-5" id="featured-3">
+    <div class="container mb-5" id="featured-3" data-aos="fade-down">
       <h1 class="display-5 fw-bold text-white text-center py-5"> This Is Our Simple Treatment Process in steps
       </h1>
-      <div class="row">
+      <div class="row" data-aos="zoom-in">
 
         <div class="feature feature-bg1">
           <div class="feature-icon">
@@ -300,18 +408,25 @@
     </div>
 
 
-    <div class="hero3 text-white px-4 py-5 text-center">
+    <div class="hero3 text-white px-4 py-5 text-center" data-aos="fade-down">
       <div class="py-5">
-        <div class="col-lg-6 mx-auto">
-          <p class="fs-5 mb-4">
+        <div class="col-lg-9 mx-auto">
+          <p class="fs-3 mb-4">
             Don't Miss This Opportunity To Take Control Of Your Life!
             What's it costing you to NOT take care of your health?
             Request an appointment with us so you can get back to enjoying the things that matter the most.
           </p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="primary-btn btn-lg px-4 me-sm-3 fw-bold">
-              Request A Free Discovery Visit
-            </button>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center" data-aos="zoom-in">
+            <div class="auth-buttons2">
+              <button class="button">
+                Request A Free Discovery Visit
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -319,10 +434,10 @@
 
 
 
-    <div class="container">
+    <div class="container" data-aos="flip-right">
       <div class="row justify-content-center">
         <div class="col-md-10 col-lg-8 text-center">
-          <h1 class="display-5 fw-bold text-white py-4">Contact Us To Get Started!</h1>
+          <h1 class="display-5 fw-bold text-white py-4" data-aos="zoom-in">Contact Us To Get Started!</h1>
           <form class="p-4 bg-light rounded shadow text-start" method="POST" action="http://localhost:3000/contact"
             id="contactForm">
             <div class="mb-3">
@@ -372,7 +487,8 @@
               <!-- Office Hours -->
               <div class="col-md-4 mb-4">
                 <h5>Office Hours</h5>
-                <p>Mon: 7am – 1pm<br>Tue: 2pm-7pm<br>Wed: 7am-1pm<br>Thu: 2pm-7pm<br>Fri: 7am-1pm<br>Sat: By Appointment Only<br>Sun: Closed</p>
+                <p>Mon: 7am – 1pm<br>Tue: 2pm-7pm<br>Wed: 7am-1pm<br>Thu: 2pm-7pm<br>Fri: 7am-1pm<br>Sat: By Appointment
+                  Only<br>Sun: Closed</p>
               </div>
 
               <!-- Social Media -->
@@ -410,6 +526,14 @@
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"></script>
     <script type="module" src="./src/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // animation duration (in ms)
+        offset: 100, // how far before element is visible (px)
+        once: true // only animate once per scroll
+      });
+    </script>
 </body>
 
 </html>
