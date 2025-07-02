@@ -107,10 +107,6 @@ textarea:focus {
   border-radius: 6px;
 }
 
-html,
-body {
-  touch-action: manipulation;
-}
 
 .body-button a,
 .header-content a,
