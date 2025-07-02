@@ -391,31 +391,33 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10 col-lg-8 text-center">
-          <h1 class="display-5 fw-bold text-white py-4">Contact Us To Get Started</h1>
-          <form class="p-4 bg-light rounded shadow text-start" method="POST" action="http://localhost:3000/contact"
-            id="contactForm">
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" name="name" required>
-            </div>
+          <div id="emailForm">
+            <h2>Submit Inquiry</h2>
 
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" name="email" required>
-            </div>
+            <form id="contactForm">
+              <!-- Message display area -->
+              <div id="formMessage" class="form-message">
+                <button id="closeMessage" class="close-message">&times;</button>
+                <span id="formMessageText"></span>
+              </div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
 
-            <div class="mb-3">
-              <label for="phone" class="form-label">Phone Number</label>
-              <input type="tel" class="form-control" id="phone" name="phone" required>
-            </div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
 
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-            </div>
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required>
 
-            <button type="submit" class="btn btn-primary">Send</button>
-          </form>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+
+              <!-- reCAPTCHA checkbox -->
+              <div class="g-recaptcha" data-sitekey="6Le0ZnUrAAAAAN8LUn7FpH_1X4YXC7eNxR6katYA"></div>
+
+              <div class="submit-btn" onclick="handleFormSubmit()">Send</div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -463,7 +465,7 @@
       </div>
     </footer>
 
-
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"></script>
