@@ -59,7 +59,7 @@ window.handleFormSubmit = function () {
   }
 
   // If all validations pass, proceed with sending email
-  fetch('https://ascend-back-end.onrender.com/contact', {
+  fetch('https://ascend-back-end.onrender.com/send-email', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
