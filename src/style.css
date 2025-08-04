@@ -164,6 +164,136 @@ textarea:focus {
   z-index: 99;
 }
 
+body {
+  background-color: #202124;
+  font-family: "Roboto", sans-serif;
+  color: #e8eaed;
+  padding: 40px;
+}
+
+.google-reviews-widget {
+  background-color: #303134;
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 1200px;
+  margin: auto;
+  border: 1px solid #5f6368;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.reviews-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.rate-us-btn {
+  background-color: #1a73e8;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.95em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.rate-us-btn:hover {
+  background-color: #1765c1;
+}
+
+.reviews-header h2 {
+  font-size: 1.5em;
+  color: #e8eaed;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.review-card {
+  background-color: #171717;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #5f6368;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.review-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 12px;
+}
+
+.review-top img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.review-top strong {
+  font-size: 1em;
+  color: #fff;
+}
+
+.stars {
+  color: #fbbc04;
+  font-size: 1em;
+}
+
+.review-date {
+  font-size: 0.8em;
+  color: #9aa0a6;
+  margin-top: 2px;
+}
+
+.review-text {
+  font-size: 0.95em;
+  color: #e8eaed;
+  line-height: 1.4em;
+}
+
+@media (max-width: 768px) {
+  .reviews-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .rate-us-btn {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .google-reviews-widget {
+    padding: 15px;
+  }
+
+  .review-card {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .review-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .review-top img {
+    margin-bottom: 8px;
+  }
+}
 
 
 
@@ -175,8 +305,6 @@ textarea:focus {
   text-decoration: none;
   color: inherit;
 }
-
-
 
 body,
 html {
@@ -885,7 +1013,6 @@ video {
   font-size: 15px;
 }
 
-
 /* Mobile responsive */
 @media (max-width: 700px) {
   .footer-grid {
@@ -903,11 +1030,8 @@ video {
   }
 
   .widgetOverlay {
-  height: 107%;
-}
-
-
-
+    height: 107%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1188,8 +1312,7 @@ video {
 }
 
 @media (max-width: 445px) {
-    .widgetOverlay {
-  height: 86%;
+  .widgetOverlay {
+    height: 86%;
+  }
 }
-}
-
