@@ -13,11 +13,17 @@ html {
   margin: 0px;
   padding: 0px;
   font-family: "Segoe UI", sans-serif;
-  background-color: black;
   width: 100%;
   touch-action: manipulation;
 
 }
+
+body {
+  background: black !important;
+}
+
+
+
 
 .video-container {
   width: 100%;

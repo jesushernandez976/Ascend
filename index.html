@@ -526,35 +526,23 @@
             <h1 class="display-5 fw-bold text-white text-center py-5"> Contact Us
             </h1>
 
-            <form id="contactForm">
-              <!-- Message display area -->
-              <div id="formMessage" class="form-message">
-                <button id="closeMessage" class="close-message">&times;</button>
-                <span id="formMessageText"></span>
-              </div>
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="enter full name" required>
+            <iframe src="https://link.ascendspine.com/widget/form/l4qeZXAYTKKXFi55AYKb"
+              style="width:100%;height:100%;border:none;border-radius:3px" id="inline-l4qeZXAYTKKXFi55AYKb"
+              data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value=""
+              data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate"
+              data-deactivation-value="" data-form-name="Website Form" data-height="680"
+              data-layout-iframe-id="inline-l4qeZXAYTKKXFi55AYKb" data-form-id="l4qeZXAYTKKXFi55AYKb"
+              title="Website Form">
 
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="enter valid email" required>
+            </iframe>
 
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="enter only digits" required>
 
-              <label for="message">Message (Please answer the following questions if applicable)</label>
-              <textarea id="message" name="message" rows="4"
-                placeholder="What is the area of concern? What is this issue stopping you from doing?"
-                required></textarea>
-
-              <!-- reCAPTCHA checkbox -->
-              <div class="g-recaptcha" data-sitekey="6Le0ZnUrAAAAAN8LUn7FpH_1X4YXC7eNxR6katYA"></div>
-
-              <div class="submit-btn" onclick="handleFormSubmit()">Send</div>
-            </form>
           </div>
         </div>
       </div>
     </div>
+
+
 
     <footer class="compact-footer">
       <div class="footer-wrapper">
@@ -568,7 +556,7 @@
           <!-- Contact -->
           <div class="footer-section">
             <h6>Contact Info</h6>
-            <p>Office: (630)326-8536<br>Email: support@ascendspine.com</p>
+            <p>Office: (630)326-6436<br>Email: support@ascendspine.com</p>
           </div>
 
           <!-- Hours -->
@@ -584,10 +572,14 @@
           <div class="footer-section">
             <h6>Follow Us</h6>
             <div class="social-links">
-              <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" title="Twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.facebook.com/share/1D3w3gPn6f/?mibextid=wwXIfr" title="Facebook" target="_blank"
+                rel="noopener noreferrer">
+                <img src="./public/fb logo.png" alt="Facebook" width="24" height="24">
+              </a>
+              <a href="https://www.instagram.com/ascendspinerehab?igsh=ZWNsNWZkZnJjcXVy&utm_source=qr" title="Instagram"
+                target="_blank" rel="noopener noreferrer">
+                <img src="./public/ig logo.png" alt="Instagram" width="24" height="24">
+              </a>
             </div>
           </div>
         </div>
@@ -598,6 +590,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://link.ascendspine.com/js/form_embed.js"></script>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
